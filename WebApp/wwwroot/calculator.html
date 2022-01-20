@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta  data-x-something>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .black {
+            margin: auto;
+            border: 3px solid black;
+            width: 350px;
+            height: 640px;
+            padding: 10px;
+            background-color: #c1ced1;
+        }
+
+        .red-3 {
+            margin-top: 90px;
+            text-align: right;
+            font-size: 45px;
+        }
+
+        .red-4 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .red-4 > div{
+            /* border: 1px solid rebeccapurple; */
+            width: 100%;
+            text-align: center;
+        }
+
+        .green-8{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        
+        .green-8 .pink{
+            background-color: #e2e6e7;
+        }
+
+        .pink {
+            padding: 15px;
+            margin: 3px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" style="display: flex;">
+
+        <img src="./calculator-boxes.png" alt="" />
+        <div class="black">
+            <div class="red-2">Calculator</div>
+
+            <h1 class="red-3"> 0 </h1>
+
+            <div class="red-4">
+                <div>MC</div>
+                <div>MR</div>
+                <div>M+</div>
+                <div>M-</div>
+                <div>MS</div>
+                <div>M?</div>
+            </div>
+
+            <div class="red-6">
+                <div class="green-8">
+                    <div class="pink">%</div>
+                    <div class="pink">CE</div>
+                    <div class="pink">C</div>
+                    <div class="pink">x</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        @foreach (var num in new List
+        <int>
+            { 4, 5, 6 })
+            {
+            <li> @num </li>
+            }
+    </ul>
+</body>
+
+</html>
