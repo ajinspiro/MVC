@@ -23,7 +23,27 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public string Test()
+        {
+            return "This is JOhn Wick";
+        }
+
+        public IActionResult Privacy(
+            int bill,
+            int numberofpeople,
+            int tippercent,
+            int x
+            )
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Privacy(
+            int bill,
+            int numberofpeople,
+            int tippercent
+            )
         {
             return View();
         }

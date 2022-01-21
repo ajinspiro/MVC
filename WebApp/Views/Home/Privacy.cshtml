@@ -1,6 +1,39 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
+
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<form method="GET" action="http://localhost:32848/home/index">
+    <label for="bill">
+        Bill
+        <input type="number" id="bill" name="bill" />
+    </label>
+    <br />
+
+    <div> Select tip %</div>
+    <label>
+        <input type="radio" value="5" name="tippercent" />
+        5%
+    </label>
+
+    <label>
+        <input type="radio" value="5" name="tippercent" />
+        10%
+    </label>
+
+    <label>
+        <input type="radio" value="5" name="tippercent" />
+        15%
+    </label>
+    <br />
+
+    <label>
+        Number of people
+        <input type="number" name="numberofpeople" />
+    </label>
+    <br />
+
+    <button type="submit">Calculate tip</button>
+</form>
+
